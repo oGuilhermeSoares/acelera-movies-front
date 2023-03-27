@@ -4,6 +4,8 @@ const client = axios.create({
     baseURL: 'http://localhost:9000'
 })
 
+
+
 client.get('/movies')
 .then(res => {
     console.log(res.data)
